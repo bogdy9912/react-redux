@@ -6,7 +6,8 @@ const Auth = () => {
 
   const dispatch = useDispatch();
 
-  const handleLogin = () => {
+  const handleLogin = (event) => {
+    event.preventDefault();
     dispatch(authActions.login());
   }
 
